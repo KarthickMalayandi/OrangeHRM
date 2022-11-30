@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import genericLibrary.BaseClass;
@@ -15,7 +17,7 @@ import pomPages.PimModuleEmpListPersonalDetailsPage;
 
 public class TestCase2 extends BaseClass{
 	
-	@Test
+	@Test(priority=2)
 	public void tc2() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		LoginPage lp=new LoginPage(driver);
@@ -33,7 +35,7 @@ public class TestCase2 extends BaseClass{
 			elp.getaTOzSortbutton().click();
 			wdu.mouseHover(driver, elp.getDescendingOrder());
 			elp.getDescendingOrder().click();
-			elp.getEditIcon().click();
+			elp.getVEditIcon().click();
 		}
 		catch(NoSuchElementException e)
 		{
@@ -72,12 +74,19 @@ public class TestCase2 extends BaseClass{
 		elcdp.workEmailtextbox(pf.getData("WorkMail"));
 		
 		elcdp.otherEmailtextbox(pf.getData("OtherMail"));
-		Thread.sleep(2000);
+		wdu.mouseHover(driver, elcdp.getSaveButton());
 		elcdp.getSaveButton().click();
-		
+		try
+		{
 		wdu.explicitWait(driver, elcdp.getSuccessPopup());
+		}
+		catch(TimeoutException e)
+		{
+			elcdp.getSaveButton().click();
+			wdu.explicitWait(driver, elcdp.getSuccessPopup());
+		}
 		
-		
+		Reporter.log("Contact Details Added to Employee Profile Successfully",true);
 	}
 
 }

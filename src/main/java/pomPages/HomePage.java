@@ -49,9 +49,17 @@ public class HomePage {
 	@FindBy(xpath="//header[@class='oxd-topbar']//li[@class='oxd-userdropdown']//p")
 	private WebElement userdropdown;
 	
+	@FindBy(xpath="//header[@class='oxd-topbar']//li[@class='oxd-userdropdown']//p[text()='Venkatesh Raman']")
+	private WebElement vuserdropdown;
+	
 	@FindBy(xpath="//ul[@class='oxd-dropdown-menu']//a[text()='About']")
 	private WebElement aboutopt;
 	
+	public WebElement getVuserdropdown() {
+		return vuserdropdown;
+	}
+
+
 	@FindBy(xpath="//ul[@class='oxd-dropdown-menu']//a[text()='Support']")
 	private WebElement supportopt;
 	

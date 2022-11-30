@@ -2,6 +2,7 @@ package testScripts;
 
 import java.io.IOException;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import genericLibrary.BaseClass;
@@ -79,6 +80,7 @@ public class TestCase1 extends BaseClass {
 		lp.passwordTextBox(pf.getData("password"));
 		lp.getLoginbutton().click();
 		
-		wdu.explicitWait(driver, hp.getUserdropdown());
+		wdu.explicitWait(driver, hp.getVuserdropdown());
+		Reporter.log("New Employee created Successfully",true);
 	}
 }

@@ -85,6 +85,13 @@ public class PimModuleEmpListPersonalDetailsPage {
 	@FindBy(xpath="//a[text()='Job']")
 	private WebElement joblink;
 	
+	@FindBy(xpath="//a[text()='Report-to']")
+	private WebElement reportToLink;
+	
+	public WebElement getReportToLink() {
+		return reportToLink;
+	}
+
 	public WebElement getJoblink() {
 		return joblink;
 	}

@@ -1,25 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[New Employee created Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Contact Details Added to Employee Profile Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Job Details Added to Employee Profile Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Assigning Supervisor and Subordinate to new employee was Successfull]]>
+    </line>
+    <line>
+      <![CDATA[Deletion of employee profile was Successfull]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-11-30T17:54:19 IST" name="Suite" finished-at="2022-11-30T17:56:12 IST" duration-ms="113943">
+  <suite started-at="2022-11-30T22:44:28 IST" name="Suite" finished-at="2022-11-30T22:47:39 IST" duration-ms="190717">
     <groups>
     </groups>
-    <test started-at="2022-11-30T17:54:19 IST" name="Test" finished-at="2022-11-30T17:56:12 IST" duration-ms="113943">
-      <class name="testScripts.TestCase2">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase2@6c80d78a]" started-at="2022-11-30T17:55:09 IST" name="openApp" finished-at="2022-11-30T17:55:16 IST" duration-ms="7264" status="PASS">
+    <test started-at="2022-11-30T22:44:28 IST" name="Test" finished-at="2022-11-30T22:47:39 IST" duration-ms="190717">
+      <class name="testScripts.TestCase4">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase4@32eff876]" started-at="2022-11-30T22:46:49 IST" name="openApp" finished-at="2022-11-30T22:46:57 IST" duration-ms="8296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc2()[pri:0, instance:testScripts.TestCase2@6c80d78a]" started-at="2022-11-30T17:55:16 IST" name="tc2" finished-at="2022-11-30T17:55:43 IST" duration-ms="27432" status="PASS">
+        <test-method signature="tc4()[pri:4, instance:testScripts.TestCase4@32eff876]" started-at="2022-11-30T22:46:57 IST" name="tc4" finished-at="2022-11-30T22:47:20 IST" duration-ms="22987" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Assigning Supervisor and Subordinate to new employee was Successfull]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- tc2 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase2@6c80d78a]" started-at="2022-11-30T17:55:43 IST" name="closeApp" finished-at="2022-11-30T17:55:44 IST" duration-ms="546" status="PASS">
+        </test-method> <!-- tc4 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase4@32eff876]" started-at="2022-11-30T22:47:20 IST" name="closeApp" finished-at="2022-11-30T22:47:21 IST" duration-ms="808" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc2 status=SUCCESS method=TestCase2.tc2()[pri:0, instance:testScripts.TestCase2@6c80d78a] output={null}]]]>
+                <![CDATA[[TestResult name=tc4 status=SUCCESS method=TestCase4.tc4()[pri:4, instance:testScripts.TestCase4@32eff876] output=Assigning Supervisor and Subordinate to new employee was Successfull]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- testScripts.TestCase4 -->
+      <class name="testScripts.TestCase5">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase5@8dbdac1]" started-at="2022-11-30T22:47:21 IST" name="openApp" finished-at="2022-11-30T22:47:29 IST" duration-ms="8207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc5()[pri:5, instance:testScripts.TestCase5@8dbdac1]" started-at="2022-11-30T22:47:29 IST" name="tc5" finished-at="2022-11-30T22:47:38 IST" duration-ms="8985" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Deletion of employee profile was Successfull]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc5 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase5@8dbdac1]" started-at="2022-11-30T22:47:38 IST" name="closeApp" finished-at="2022-11-30T22:47:39 IST" duration-ms="654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc5 status=SUCCESS method=TestCase5.tc5()[pri:5, instance:testScripts.TestCase5@8dbdac1] output=Deletion of employee profile was Successfull]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- testScripts.TestCase5 -->
+      <class name="testScripts.TestCase2">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase2@6dc17b83]" started-at="2022-11-30T22:45:26 IST" name="openApp" finished-at="2022-11-30T22:45:35 IST" duration-ms="8404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc2()[pri:2, instance:testScripts.TestCase2@6dc17b83]" started-at="2022-11-30T22:45:35 IST" name="tc2" finished-at="2022-11-30T22:46:15 IST" duration-ms="40687" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Contact Details Added to Employee Profile Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase2@6dc17b83]" started-at="2022-11-30T22:46:15 IST" name="closeApp" finished-at="2022-11-30T22:46:16 IST" duration-ms="718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc2 status=SUCCESS method=TestCase2.tc2()[pri:2, instance:testScripts.TestCase2@6dc17b83] output=Contact Details Added to Employee Profile Successfully]]]>
               </value>
             </param>
           </params>
@@ -28,19 +94,22 @@
         </test-method> <!-- closeApp -->
       </class> <!-- testScripts.TestCase2 -->
       <class name="testScripts.TestCase3">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase3@62150f9e]" started-at="2022-11-30T17:55:44 IST" name="openApp" finished-at="2022-11-30T17:55:50 IST" duration-ms="5788" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase3@5e0826e7]" started-at="2022-11-30T22:46:16 IST" name="openApp" finished-at="2022-11-30T22:46:24 IST" duration-ms="8140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc3()[pri:0, instance:testScripts.TestCase3@62150f9e]" started-at="2022-11-30T17:55:50 IST" name="tc3" finished-at="2022-11-30T17:56:12 IST" duration-ms="22373" status="PASS">
+        <test-method signature="tc3()[pri:3, instance:testScripts.TestCase3@5e0826e7]" started-at="2022-11-30T22:46:24 IST" name="tc3" finished-at="2022-11-30T22:46:48 IST" duration-ms="23808" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Job Details Added to Employee Profile Successfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- tc3 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase3@62150f9e]" started-at="2022-11-30T17:56:12 IST" name="closeApp" finished-at="2022-11-30T17:56:12 IST" duration-ms="474" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase3@5e0826e7]" started-at="2022-11-30T22:46:48 IST" name="closeApp" finished-at="2022-11-30T22:46:49 IST" duration-ms="748" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc3 status=SUCCESS method=TestCase3.tc3()[pri:0, instance:testScripts.TestCase3@62150f9e] output={null}]]]>
+                <![CDATA[[TestResult name=tc3 status=SUCCESS method=TestCase3.tc3()[pri:3, instance:testScripts.TestCase3@5e0826e7] output=Job Details Added to Employee Profile Successfully]]]>
               </value>
             </param>
           </params>
@@ -49,19 +118,22 @@
         </test-method> <!-- closeApp -->
       </class> <!-- testScripts.TestCase3 -->
       <class name="testScripts.TestCase1">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase1@2c767a52]" started-at="2022-11-30T17:54:19 IST" name="openApp" finished-at="2022-11-30T17:54:32 IST" duration-ms="13182" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase1@243c4f91]" started-at="2022-11-30T22:44:28 IST" name="openApp" finished-at="2022-11-30T22:44:41 IST" duration-ms="13247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc1()[pri:0, instance:testScripts.TestCase1@2c767a52]" started-at="2022-11-30T17:54:32 IST" name="tc1" finished-at="2022-11-30T17:55:08 IST" duration-ms="36269" status="PASS">
+        <test-method signature="tc1()[pri:0, instance:testScripts.TestCase1@243c4f91]" started-at="2022-11-30T22:44:41 IST" name="tc1" finished-at="2022-11-30T22:45:25 IST" duration-ms="43635" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[New Employee created Successfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- tc1 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase1@2c767a52]" started-at="2022-11-30T17:55:08 IST" name="closeApp" finished-at="2022-11-30T17:55:09 IST" duration-ms="531" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase1@243c4f91]" started-at="2022-11-30T22:45:25 IST" name="closeApp" finished-at="2022-11-30T22:45:26 IST" duration-ms="1278" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc1 status=SUCCESS method=TestCase1.tc1()[pri:0, instance:testScripts.TestCase1@2c767a52] output={null}]]]>
+                <![CDATA[[TestResult name=tc1 status=SUCCESS method=TestCase1.tc1()[pri:0, instance:testScripts.TestCase1@243c4f91] output=New Employee created Successfully]]]>
               </value>
             </param>
           </params>

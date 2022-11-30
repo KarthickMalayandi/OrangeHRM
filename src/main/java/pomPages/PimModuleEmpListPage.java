@@ -61,13 +61,40 @@ public class PimModuleEmpListPage {
 	@FindBy(xpath="//div[text()='Venkatesh Sedhu']/../..//div//button/i[@class='oxd-icon bi-pencil-fill']")
 	private WebElement editIcon;
 	
+	@FindBy(xpath="//div[text()='Venkatesh Sedhu']/../..//div//button/i[@class='oxd-icon bi-trash']")
+	private WebElement deleteIcon;
+	
 	@FindBy(xpath="//div[@class='orangehrm-container']")
 	private WebElement listOfEmp;
 	
 	@FindBy(xpath="(//div[@role='table']//div[contains(@class,'oxd-table-row--clickable')]//button/i[@class='oxd-icon bi-pencil-fill'])[1]")
 	private WebElement firstEditButton;
 	
+	@FindBy(xpath="(//div[@role='table']//div[contains(@class,'oxd-table-row--clickable')]//button/i[@class='oxd-icon bi-trash'])[1]")
+	private WebElement firstdeleteButton;
 	
+	@FindBy(xpath="//button[text()=' Yes, Delete ']")
+	private WebElement yesButton;
+	
+	@FindBy(xpath="//div[@id='oxd-toaster_1']")
+	private WebElement successPopup;
+	
+	public WebElement getSuccessPopup() {
+		return successPopup;
+	}
+
+	public WebElement getYesButton() {
+		return yesButton;
+	}
+
+	public WebElement getVDeleteIcon() {
+		return deleteIcon;
+	}
+
+	public WebElement getFirstdeleteButton() {
+		return firstdeleteButton;
+	}
+
 	public WebElement getFirstEditButton() {
 		return firstEditButton;
 	}
@@ -76,7 +103,7 @@ public class PimModuleEmpListPage {
 		return listOfEmp;
 	}
 
-	public WebElement getEditIcon() {
+	public WebElement getVEditIcon() {
 		return editIcon;
 	}
 

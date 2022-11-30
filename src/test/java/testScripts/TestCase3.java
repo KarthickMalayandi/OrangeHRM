@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.NoSuchElementException;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import genericLibrary.BaseClass;
@@ -16,7 +17,7 @@ import pomPages.PimModuleEmpListPersonalDetailsPage;
 
 public class TestCase3 extends BaseClass{
 	
-	@Test
+	@Test(priority=3)
 	public void tc3() throws EncryptedDocumentException, IOException, InterruptedException {
 	
 	LoginPage lp=new LoginPage(driver);
@@ -34,7 +35,7 @@ public class TestCase3 extends BaseClass{
 		elp.getaTOzSortbutton().click();
 		wdu.mouseHover(driver, elp.getDescendingOrder());
 		elp.getDescendingOrder().click();
-		elp.getEditIcon().click();
+		elp.getVEditIcon().click();
 	}
 	catch(NoSuchElementException e)
 	{
@@ -70,6 +71,8 @@ public class TestCase3 extends BaseClass{
 	eljdp.getSaveButton().click();
 	
 	wdu.explicitWait(driver, eljdp.getSuccessPopup());
+	
+	Reporter.log("Job Details Added to Employee Profile Successfully",true);
 	
 	}
 }

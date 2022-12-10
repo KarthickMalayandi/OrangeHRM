@@ -59,7 +59,7 @@ public class BaseClass {
 		{
 			
 			reports.createTest(name).pass(name+" is passed");
-			Reporter.log("Not Happening",true);
+			
 		}
 		else if(status==2)
 		{

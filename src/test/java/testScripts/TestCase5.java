@@ -7,6 +7,8 @@ import org.openqa.selenium.NoSuchElementException;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import genericLibrary.BaseClass;
 import pomPages.HomePage;
 import pomPages.LoginPage;
@@ -15,7 +17,7 @@ import pomPages.PimModuleEmpListPage;
 
 public class TestCase5 extends BaseClass{
 
-	@Test(priority=5)
+	@Test
 	public void tc5() throws EncryptedDocumentException, IOException {
 
 		LoginPage lp=new LoginPage(driver);
@@ -44,6 +46,7 @@ public class TestCase5 extends BaseClass{
 		wdu.explicitWait(driver, elp.getSuccessPopup());
 		
 		Reporter.log("Deletion of employee profile was Successfull",true);
+		
 		
 	}
 }

@@ -1,43 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="8" total="13" passed="4" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[New Employee created Successfully]]>
     </line>
     <line>
+      <![CDATA[Not Happening]]>
+    </line>
+    <line>
       <![CDATA[Contact Details Added to Employee Profile Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Not Happening]]>
     </line>
     <line>
       <![CDATA[Job Details Added to Employee Profile Successfully]]>
     </line>
     <line>
-      <![CDATA[Assigning Supervisor and Subordinate to new employee was Successfull]]>
+      <![CDATA[Not Happening]]>
     </line>
     <line>
       <![CDATA[Deletion of employee profile was Successfull]]>
     </line>
+    <line>
+      <![CDATA[Not Happening]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-11-30T22:44:28 IST" name="Suite" finished-at="2022-11-30T22:47:39 IST" duration-ms="190717">
+  <suite started-at="2022-12-10T14:05:48 IST" name="Suite" finished-at="2022-12-10T14:09:28 IST" duration-ms="219757">
     <groups>
     </groups>
-    <test started-at="2022-11-30T22:44:28 IST" name="Test" finished-at="2022-11-30T22:47:39 IST" duration-ms="190717">
+    <test started-at="2022-12-10T14:05:48 IST" name="Test" finished-at="2022-12-10T14:09:28 IST" duration-ms="219757">
       <class name="testScripts.TestCase4">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase4@32eff876]" started-at="2022-11-30T22:46:49 IST" name="openApp" finished-at="2022-11-30T22:46:57 IST" duration-ms="8296" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase4@5552768b]" started-at="2022-12-10T14:08:34 IST" name="openApp" finished-at="2022-12-10T14:08:42 IST" duration-ms="7606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc4()[pri:4, instance:testScripts.TestCase4@32eff876]" started-at="2022-11-30T22:46:57 IST" name="tc4" finished-at="2022-11-30T22:47:20 IST" duration-ms="22987" status="PASS">
+        <test-method signature="tc4()[pri:0, instance:testScripts.TestCase4@5552768b]" started-at="2022-12-10T14:08:42 IST" name="tc4" finished-at="2022-12-10T14:09:13 IST" duration-ms="30819" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@role='option']/span[contains(text(),'Paul')]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@role='option']/span[contains(text(),'Paul')]' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at genericLibrary.WebDriverUtilities.explicitWait(WebDriverUtilities.java:56)
+at testScripts.TestCase4.tc4(TestCase4.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='option']/span[contains(text(),'Paul')]"}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BNEF5TES', ip: '192.168.118.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\91877\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51646}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dbc9a4bbb790dd9540fdb7420016e51a
+*** Element info: {Using=xpath, value=//div[@role='option']/span[contains(text(),'Paul')]}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
-            <line>
-              <![CDATA[Assigning Supervisor and Subordinate to new employee was Successfull]]>
-            </line>
           </reporter-output>
         </test-method> <!-- tc4 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase4@32eff876]" started-at="2022-11-30T22:47:20 IST" name="closeApp" finished-at="2022-11-30T22:47:21 IST" duration-ms="808" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase4@5552768b]" started-at="2022-12-10T14:09:13 IST" name="closeApp" finished-at="2022-12-10T14:09:14 IST" duration-ms="701" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc4 status=SUCCESS method=TestCase4.tc4()[pri:4, instance:testScripts.TestCase4@32eff876] output=Assigning Supervisor and Subordinate to new employee was Successfull]]]>
+                <![CDATA[[TestResult name=tc4 status=FAILURE method=TestCase4.tc4()[pri:0, instance:testScripts.TestCase4@5552768b] output={null}]]]>
               </value>
             </param>
           </params>
@@ -46,100 +122,120 @@
         </test-method> <!-- closeApp -->
       </class> <!-- testScripts.TestCase4 -->
       <class name="testScripts.TestCase5">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase5@8dbdac1]" started-at="2022-11-30T22:47:21 IST" name="openApp" finished-at="2022-11-30T22:47:29 IST" duration-ms="8207" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase5@3c947bc5]" started-at="2022-12-10T14:09:14 IST" name="openApp" finished-at="2022-12-10T14:09:20 IST" duration-ms="6640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc5()[pri:5, instance:testScripts.TestCase5@8dbdac1]" started-at="2022-11-30T22:47:29 IST" name="tc5" finished-at="2022-11-30T22:47:38 IST" duration-ms="8985" status="PASS">
+        <test-method signature="tc5()[pri:0, instance:testScripts.TestCase5@3c947bc5]" started-at="2022-12-10T14:09:20 IST" name="tc5" finished-at="2022-12-10T14:09:28 IST" duration-ms="7681" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Deletion of employee profile was Successfull]]>
             </line>
           </reporter-output>
         </test-method> <!-- tc5 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase5@8dbdac1]" started-at="2022-11-30T22:47:38 IST" name="closeApp" finished-at="2022-11-30T22:47:39 IST" duration-ms="654" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase5@3c947bc5]" started-at="2022-12-10T14:09:28 IST" name="closeApp" finished-at="2022-12-10T14:09:28 IST" duration-ms="304" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc5 status=SUCCESS method=TestCase5.tc5()[pri:5, instance:testScripts.TestCase5@8dbdac1] output=Deletion of employee profile was Successfull]]]>
+                <![CDATA[[TestResult name=tc5 status=SUCCESS method=TestCase5.tc5()[pri:0, instance:testScripts.TestCase5@3c947bc5] output=Deletion of employee profile was Successfull]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Not Happening]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- testScripts.TestCase5 -->
       <class name="testScripts.TestCase2">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase2@6dc17b83]" started-at="2022-11-30T22:45:26 IST" name="openApp" finished-at="2022-11-30T22:45:35 IST" duration-ms="8404" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase2@87a85e1]" started-at="2022-12-10T14:07:19 IST" name="openApp" finished-at="2022-12-10T14:07:26 IST" duration-ms="7157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc2()[pri:2, instance:testScripts.TestCase2@6dc17b83]" started-at="2022-11-30T22:45:35 IST" name="tc2" finished-at="2022-11-30T22:46:15 IST" duration-ms="40687" status="PASS">
+        <test-method signature="tc2()[pri:0, instance:testScripts.TestCase2@87a85e1]" started-at="2022-12-10T14:07:26 IST" name="tc2" finished-at="2022-12-10T14:08:03 IST" duration-ms="37016" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Contact Details Added to Employee Profile Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase2@6dc17b83]" started-at="2022-11-30T22:46:15 IST" name="closeApp" finished-at="2022-11-30T22:46:16 IST" duration-ms="718" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase2@87a85e1]" started-at="2022-12-10T14:08:03 IST" name="closeApp" finished-at="2022-12-10T14:08:04 IST" duration-ms="388" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc2 status=SUCCESS method=TestCase2.tc2()[pri:2, instance:testScripts.TestCase2@6dc17b83] output=Contact Details Added to Employee Profile Successfully]]]>
+                <![CDATA[[TestResult name=tc2 status=SUCCESS method=TestCase2.tc2()[pri:0, instance:testScripts.TestCase2@87a85e1] output=Contact Details Added to Employee Profile Successfully]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Not Happening]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- testScripts.TestCase2 -->
       <class name="testScripts.TestCase3">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase3@5e0826e7]" started-at="2022-11-30T22:46:16 IST" name="openApp" finished-at="2022-11-30T22:46:24 IST" duration-ms="8140" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase3@671a5887]" started-at="2022-12-10T14:08:04 IST" name="openApp" finished-at="2022-12-10T14:08:10 IST" duration-ms="6570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc3()[pri:3, instance:testScripts.TestCase3@5e0826e7]" started-at="2022-11-30T22:46:24 IST" name="tc3" finished-at="2022-11-30T22:46:48 IST" duration-ms="23808" status="PASS">
+        <test-method signature="tc3()[pri:0, instance:testScripts.TestCase3@671a5887]" started-at="2022-12-10T14:08:10 IST" name="tc3" finished-at="2022-12-10T14:08:34 IST" duration-ms="23733" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Job Details Added to Employee Profile Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- tc3 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase3@5e0826e7]" started-at="2022-11-30T22:46:48 IST" name="closeApp" finished-at="2022-11-30T22:46:49 IST" duration-ms="748" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase3@671a5887]" started-at="2022-12-10T14:08:34 IST" name="closeApp" finished-at="2022-12-10T14:08:34 IST" duration-ms="372" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc3 status=SUCCESS method=TestCase3.tc3()[pri:3, instance:testScripts.TestCase3@5e0826e7] output=Job Details Added to Employee Profile Successfully]]]>
+                <![CDATA[[TestResult name=tc3 status=SUCCESS method=TestCase3.tc3()[pri:0, instance:testScripts.TestCase3@671a5887] output=Job Details Added to Employee Profile Successfully]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Not Happening]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- testScripts.TestCase3 -->
       <class name="testScripts.TestCase1">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase1@243c4f91]" started-at="2022-11-30T22:44:28 IST" name="openApp" finished-at="2022-11-30T22:44:41 IST" duration-ms="13247" status="PASS">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:testScripts.TestCase1@157853da]" started-at="2022-12-10T14:05:48 IST" name="configBS" finished-at="2022-12-10T14:05:48 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="openApp()[pri:0, instance:testScripts.TestCase1@157853da]" started-at="2022-12-10T14:05:48 IST" name="openApp" finished-at="2022-12-10T14:06:42 IST" duration-ms="53516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc1()[pri:0, instance:testScripts.TestCase1@243c4f91]" started-at="2022-11-30T22:44:41 IST" name="tc1" finished-at="2022-11-30T22:45:25 IST" duration-ms="43635" status="PASS">
+        <test-method signature="tc1()[pri:0, instance:testScripts.TestCase1@157853da]" started-at="2022-12-10T14:06:42 IST" name="tc1" finished-at="2022-12-10T14:07:19 IST" duration-ms="36681" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[New Employee created Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- tc1 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase1@243c4f91]" started-at="2022-11-30T22:45:25 IST" name="closeApp" finished-at="2022-11-30T22:45:26 IST" duration-ms="1278" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testScripts.TestCase1@157853da]" started-at="2022-12-10T14:07:19 IST" name="closeApp" finished-at="2022-12-10T14:07:19 IST" duration-ms="516" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc1 status=SUCCESS method=TestCase1.tc1()[pri:0, instance:testScripts.TestCase1@243c4f91] output=New Employee created Successfully]]]>
+                <![CDATA[[TestResult name=tc1 status=SUCCESS method=TestCase1.tc1()[pri:0, instance:testScripts.TestCase1@157853da] output=New Employee created Successfully]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Not Happening]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:testScripts.TestCase1@157853da]" started-at="2022-12-10T14:09:28 IST" name="configAS" finished-at="2022-12-10T14:09:29 IST" duration-ms="484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
       </class> <!-- testScripts.TestCase1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

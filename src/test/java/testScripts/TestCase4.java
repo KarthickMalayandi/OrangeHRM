@@ -7,6 +7,8 @@ import org.openqa.selenium.NoSuchElementException;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import genericLibrary.BaseClass;
 import pomPages.HomePage;
 import pomPages.LoginPage;
@@ -16,7 +18,7 @@ import pomPages.PimModuleEmpListReportToPage;
 
 public class TestCase4 extends BaseClass{
 	
-	@Test(priority=4)
+	@Test
 	public void tc4() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		LoginPage lp=new LoginPage(driver);
@@ -33,7 +35,6 @@ public class TestCase4 extends BaseClass{
 		elp.getaTOzSortbutton().click();
 		wdu.explicitWait(driver, elp.getDescendingOrder());
 		elp.getDescendingOrder().click();
-		
 		try
 		{
 			elp.getVEditIcon().click();
@@ -68,6 +69,7 @@ public class TestCase4 extends BaseClass{
 		elrtp.getSupervisorSaveButton().click();
 		wdu.explicitWait(driver, elrtp.getSuccessPopup());
 		Reporter.log("Assigning Supervisor and Subordinate to new employee was Successfull",true);
+		
 	}
 
 }

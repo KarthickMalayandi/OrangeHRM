@@ -8,6 +8,8 @@ import org.openqa.selenium.TimeoutException;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import genericLibrary.BaseClass;
 import pomPages.HomePage;
 import pomPages.LoginPage;
@@ -17,7 +19,7 @@ import pomPages.PimModuleEmpListPersonalDetailsPage;
 
 public class TestCase2 extends BaseClass{
 	
-	@Test(priority=2)
+	@Test
 	public void tc2() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		LoginPage lp=new LoginPage(driver);
@@ -87,6 +89,8 @@ public class TestCase2 extends BaseClass{
 		}
 		
 		Reporter.log("Contact Details Added to Employee Profile Successfully",true);
+		
+		
 	}
 
 }

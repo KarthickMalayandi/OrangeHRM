@@ -1,0 +1,61 @@
+TestCase1 Scenario:
+
+Open the browser 
+Open the Application with url(https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
+Login as Admin with valid username and password
+click on Pim Module link
+click on add button in Employee list page
+Enter all valid data and click on Create Login Details Switch
+Create new employee Credentials by enter valid data and click on save button
+Enter all valid data under Personal Details section and click on save button
+Enter all valid data under Custom Field section and click on save button
+click on userProfile icon and click on logout in the dropdown
+In login page enter the newly created login credentials and Verify login.
+
+TestCase2 Scenario:
+
+Open the browser 
+Open the Application with url(https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
+Login as Admin with valid username and password
+click on Pim Module link
+select a employee from the list of employees and click edit icon
+In employee details page click on contact details link
+Enter all valid data to all required fields and click on save button 
+verify the display of successfully added popup.
+
+TestCase3 Scenario:
+
+Open the browser 
+Open the Application with url(https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
+Login as Admin with valid username and password
+click on Pim Module link
+select a employee from the list of employees and click edit icon
+In employee details page click on Job details link 
+Enter all valid data to all required fields and click on save button 
+verify the display of successfully added popup.
+
+TestCase4 Scenario:
+
+Open the browser 
+Open the Application with url(https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
+Login as Admin with valid username and password
+click on Pim Module link
+select a employee from the list of employees and click edit icon
+In employee details page click on Reports To link
+Assign supervisor and sub-ordinate to the employee and click on save button
+verify the display of successfully added popup.
+
+TestCase5 Scenario:
+
+Open the browser 
+Open the Application with url(https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
+Login as Admin with valid username and password
+click on Pim Module link
+select a employee from the list of employees and click delete icon
+Click on "yes,delete" button on the popup
+verify the display of successfully deleted popup.
+
+
+
+
+
